@@ -1,6 +1,6 @@
-streamlit==1.30.0
-torch==2.5.1
-torchvision==0.20.1
-transformers==4.46.1
-opencv_python_headless==4.10.0.84
-matplotlib==3.8.4
+streamlit
+torch
+torchvision
+transformers
+opencv_python_headless
+matplotlib
