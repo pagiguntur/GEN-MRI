@@ -1,6 +1,5 @@
 import streamlit as st
 import base64
-import tensorflow as tf
 import cv2
 import numpy as np
 import matplotlib.cm as cm
