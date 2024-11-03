@@ -1,4 +1,4 @@
-opencv_python==4.10.0.8
+opencv_python==4.7.0.8
 pandas==1.5.3
 Pillow==10.0.0
 streamlit==1.30.0
