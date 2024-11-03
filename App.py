@@ -70,8 +70,8 @@ class ProjectionModel(nn.Module):
 def load_best_checkpoint(checkpoint_path, VISION_MODEL_OUTPUT_DIM=768, LANG_MODEL_INPUT_DIM=768):
     vision_preprocess = models.swin_transformer.Swin_T_Weights.IMAGENET1K_V1.transforms()
     
-    lang_model = GPT2LMHeadModel.from_pretrained(os.path.join(checkpoint_path, 'gpt-2-model'))
     tokenizer = GPT2Tokenizer.from_pretrained(os.path.join(checkpoint_path, 'gpt-2-tokenizer'))
+    lang_model = GPT2LMHeadModel.from_pretrained(os.path.join(checkpoint_path, 'gpt-2-model'))
     
     projection_model = ProjectionModel(VISION_MODEL_OUTPUT_DIM, LANG_MODEL_INPUT_DIM)
     projection_model.load_state_dict(torch.load(os.path.join(checkpoint_path, 'projection_model.pth'), map_location=torch.device('cpu')))
