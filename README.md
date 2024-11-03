@@ -1,1 +1,1 @@
-# GEN-MRI
+# CRR-GENAI
